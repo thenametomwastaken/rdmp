@@ -1,0 +1,162 @@
+html, body {
+  box-sizing: border-box;
+  margin: 0 auto;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.container {
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 450;
+  border-left: 3px solid #DFDFDF;
+  overflow: visible;
+}
+
+.milestone {
+  background-color: #eee;
+  padding: 0.5em;
+  border-radius: 3px;
+  margin: 1em;
+  width: 450px;
+  position: relative;
+  margin-left: 20px;
+  margin-bottom: 35px;
+}
+
+.shadow {
+  box-shadow: 1px 1px 4px 0px rgba(1, 5, 9, 0.2);
+}
+
+.marker {
+  background-color: green;
+  position: absolute;
+  left: -37px;
+  top: 50px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  padding: 4px 3px 0 3px;
+  text-align: center;
+  transition: background-color 0.5s ease;
+}
+
+.marker:hover {
+  box-shadow: 1px 1px 4px 0px rgba(1, 5, 9, 0.5);
+}
+
+.fa {
+  color: white;
+  font-size: 22px;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0;
+}
+
+h3 {
+  font-size: 1em;
+  font-weight: bold;
+  color: #777777;
+}
+
+p {
+  font-size: 1em;
+}
+
+.date {
+  position: absolute;
+  left: -188px;
+  top: 54px;
+  color: #939393;
+  text-align: right;
+}
+
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: grey;
+  opacity: 0.8;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.modal {
+  padding: 1em;
+  position: absolute;
+  background-color: white;
+  border-radius: 5px;
+  width: 400px;
+  height: 315px;
+  z-index: 20;
+  position:absolute;
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top: 100px;
+}
+
+input[type="text"] {
+  height: 34px;
+  font-family: inherit;
+  width: 100%;
+}
+
+textarea {
+  font-family: inherit;
+  resize: none;
+  width: 100%;
+}
+
+.button-group{
+  padding: 0.75em 0;
+}
+
+.btn {
+  border-radius: 3px;
+  background-color: #ccc;
+  border: 0;
+  height: 34px;
+  min-width: 70px;
+}
+
+.btn-blue {
+  background-color: #3b88d8;
+  color: white;
+}
+
+.btn-green {
+  background-color: #39B552;
+  color: white;
+}
+
+.remove {
+  position: absolute;
+  height: 22px;
+  width: 20px;
+  top: 0;
+  right: 0;
+}
+
+.remove>.fa {
+  color: #CBCBCB;
+}
+
+.remove>.fa:hover {
+  color: #F44C4C;
+}
